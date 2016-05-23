@@ -1,0 +1,29 @@
+spring:
+  profiles: development
+  application:
+    name: dragon
+  cloud:
+    config:
+      uri: http://localhost:8888/
+      name: user
+      password: password
+      label: master
+      profile: development
+
+server:
+  port: 8088
+  context-path: /app1
+
+person:
+  dragon:
+    name: dragon
+    age: 1
+    male: true
+
+
+logging:
+  levels:
+    org.springframework.security: DEBUG
+
+security.user.name: user
+security.user.password: password
