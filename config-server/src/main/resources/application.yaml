@@ -5,6 +5,7 @@ management:
 
 
 spring:
+
   application:
     name: spring-config-server-demo
   cloud:

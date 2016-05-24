@@ -1,0 +1,36 @@
+spring:
+  profiles: development
+  application:
+    name: dragon
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888/
+      username: user
+      password: password
+      label: master
+      profile: development
+
+
+server:
+  port: 8088
+  context-path: /app1
+
+person:
+  dragon:
+    name: dragon
+    age: 1
+    male: true
+
+
+#logging:
+#  levels:
+#    org.springframework.security: DEBUG
+
+
+
+#security:
+#  user:
+#    name: user
+#    password: {cipher}AQBfk5d5+2TKGScfTTSaRN/LqlpgjSjIcXvTVAUH/PqajT2c6Bl1/xvVdWdeuyYIIvEa6yvdM6Sg/EVeOJJzcLNHPcBJH7cfBidv5+LDnx0sWC4x7JiAKQ8BPVrS1Sp5zdOcFMfkbeZGF+2FUuWZZw2inY/jX7YaEs5NFsTGDOoN1S0ueDdXseelLT7ikfjl0CRl8mqPw4P9vAk9HLovWUDAPXKxC9GEx65Oxbn4att8YspuQfXyKM+QDQmJVKzndZMDVD64TbJzhg4eKkwYIhrlWhQsJD1+U1k7EAmjQXvt6X5qTIQ4Hlb+trShuxMyrXS74CrEa/sO5NtBsejadIiWpqe8PhkU6qiMW2vBuBdF28oys6KoLuCjVAhZADE7+NM=
+
+#security.user.password: '{cipher}AQBfk5d5+2TKGScfTTSaRN/LqlpgjSjIcXvTVAUH/PqajT2c6Bl1/xvVdWdeuyYIIvEa6yvdM6Sg/EVeOJJzcLNHPcBJH7cfBidv5+LDnx0sWC4x7JiAKQ8BPVrS1Sp5zdOcFMfkbeZGF+2FUuWZZw2inY/jX7YaEs5NFsTGDOoN1S0ueDdXseelLT7ikfjl0CRl8mqPw4P9vAk9HLovWUDAPXKxC9GEx65Oxbn4att8YspuQfXyKM+QDQmJVKzndZMDVD64TbJzhg4eKkwYIhrlWhQsJD1+U1k7EAmjQXvt6X5qTIQ4Hlb+trShuxMyrXS74CrEa/sO5NtBsejadIiWpqe8PhkU6qiMW2vBuBdF28oys6KoLuCjVAhZADE7+NM='
