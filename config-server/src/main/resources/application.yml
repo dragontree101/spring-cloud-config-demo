@@ -12,16 +12,8 @@ spring:
     config:
       server:
         git:
+          searchPaths: /share
           uri: https://github.com/dragontree101/dragon-config-repo
-          development:
-            pattern:
-              - development
-            uri: https://github.com/dragontree101/dragon-config-repo
-          production:
-            pattern:
-             - production
-            uri: https://github.com/dragontree101/dragon-config-repo
-
 encrypt:
   keyStore:
     location: classpath:/server.jks

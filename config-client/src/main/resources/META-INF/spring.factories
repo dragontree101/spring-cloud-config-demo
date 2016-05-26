@@ -1,3 +1,6 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.dragon.study.springcloud.config.client.configure.DragonBeanConfigure
 
+org.springframework.context.ApplicationListener=\
+com.dragon.study.springcloud.config.client.listener.ApplicationEnvPrepareListener
+

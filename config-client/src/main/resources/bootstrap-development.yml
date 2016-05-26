@@ -2,6 +2,7 @@ spring:
   profiles: development
   application:
     name: dragon
+  index: config-centre-client
   cloud:
     config:
       uri: http://127.0.0.1:8888/
